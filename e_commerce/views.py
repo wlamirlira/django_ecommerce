@@ -6,18 +6,18 @@ def home_pages(request):
         "title": "Página Principal",
         "content": "Bem-Vindo a página principal"
     }
-    return render(request, 'home_page.html', context)
+    return render(request, 'home.html', context)
 
-def about_pages(request):
+def about_page(request):
     context = {
         "title": "Página Principal - ABOUT PAGE",
         "content": "Bem-Vindo a página principal"
     }
-    return render(request, 'about_page.html', context)
+    return render(request, 'about/view.html', context)
 
-def contact_pages(request):
+def contact_page(request):
     context = {
         "title": "Página Principal - CONTACT PAGE",
         "content": "Bem-Vindo a página principal"
     }
-    return render(request, "contact_page.html", context)
+    return render(request, "contact/view.html", context)
